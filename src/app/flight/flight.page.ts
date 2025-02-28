@@ -15,11 +15,11 @@ export class FlightPage implements OnInit {
   ngOnInit() {
     // Fetch the flight data passed through router state
     const navigation = this.router.getCurrentNavigation();
-    console.log('Navigation:', navigation);
+    // console.log('Navigation:', navigation);
     if (navigation?.extras?.state?.['data']) {
       // Corrected bracket notation for accessing 'data'
       this.flight = navigation.extras.state['data'].flight; // Access the flight from 'data'
-      console.log('Flight Data:', this.flight);
+      // console.log('Flight Data:', this.flight);
     } else {
       console.error('No flight data found!');
     }

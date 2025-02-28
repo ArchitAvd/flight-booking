@@ -4,15 +4,15 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { FlightAppComponent } from './flight.app.component';
+import { FlightAppRoutingModule } from './flight.app-routing.module';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [IonicModule.forRoot(), AppRoutingModule, CommonModule],
+  declarations: [FlightAppComponent],
+  imports: [IonicModule.forRoot(), FlightAppRoutingModule, CommonModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
-  bootstrap: [AppComponent],
-  exports: [AppComponent],
+  bootstrap: [FlightAppComponent],
+  exports: [FlightAppComponent],
 })
-export class AppModule {}
+export class FlightAppModule {}

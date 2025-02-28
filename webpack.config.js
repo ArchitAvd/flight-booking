@@ -7,7 +7,7 @@ module.exports = withModuleFederationPlugin({
   name: "app",
 
   exposes: {
-    "./AppModule": "./src/app/app.module.ts",
+    "./FlightAppModule": "./src/app/flight.app.module.ts",
   },
 
   shared: {
